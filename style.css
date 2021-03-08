@@ -45,7 +45,7 @@ h2 {
 /*=====NAV=====*/
 
 
-.nav {
+#navbar {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -57,16 +57,23 @@ h2 {
 
 .nav-list {
     display: flex;
+    justify-content: space-around;
+    width: 100%;
     margin: 0;
 }
 
 .nav-list a {
     display: flex;
-    justify-content: space-evenly;
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 400px) {
+    .nav-list a {
+        font-size: 1.1rem;
+    }
 }
   
 
